@@ -22,4 +22,19 @@ Even though we are using the Ubuntu image, it is important to note that the cont
 
 With this command we can see the running containers
 
+### docker container exec -it b3ad2a23fab3 bash
+
+Use that container ID to run bash inside that container by using the docker container exec command. 
+Because you are using bash and want to interact with this container from your terminal, use the -it flag to run using interactive mode while allocating a psuedo-terminal
+
+
+## Bash comands 
+
+### ps -ef
+
+ inspect the running processes
+ 
+ 
+
+
 
