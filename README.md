@@ -17,7 +17,7 @@ If you run top while inside the container, you will notice that it shows the pro
 Even though we are using the Ubuntu image, it is important to note that the container does not have its own kernel. It uses the kernel of the host and the Ubuntu image is used only to provide the file system and tools available on an Ubuntu system.
 
 
-command 
+## Docker command 
 docker container ls 
 
 With this command we can see the running containers
