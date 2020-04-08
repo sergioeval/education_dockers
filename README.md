@@ -18,6 +18,7 @@ Even though we are using the Ubuntu image, it is important to note that the cont
 
 
 ## Docker commands 
+
 ### docker container ls 
 
 With this command we can see the running containers
@@ -41,6 +42,25 @@ Build the Docker image. Pass in the -t parameter to name your image python-hello
 ### docker image ls
 
 Verify that your image shows in your image list
+
+### docker run -p 5001:5000 -d python-hello-world
+
+Run the Docker image
+
+The -p flag maps a port running inside the container to your host. In this case, you're mapping the Python app running on port 5000 inside the container to port 5001 on your host. Note that if port 5001 is already being used by another application on your host, you might need to replace 5001 with another value, such as 5002.
+
+### docker container logs [container id]
+
+Will show you the logs for that running container
+
+## Push to a central registry
+
+### docker login
+
+### docker tag python-hello-world [dockerhub username]/python-hello-world
+
+The Docker Hub naming convention is to tag your image with [dockerhub username]/[image name]. To do this, tag your previously created image python-hello-world to fit that format.
+
 
 ## The docker file 
 
