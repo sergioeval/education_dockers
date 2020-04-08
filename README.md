@@ -34,6 +34,7 @@ Stop the container
 ### docker system prune
 Remove the stopped containers
 
+## Create and build the Docker image
 
 ### docker image build -t python-hello-world .(including the point at the end)
 
@@ -42,6 +43,8 @@ Build the Docker image. Pass in the -t parameter to name your image python-hello
 ### docker image ls
 
 Verify that your image shows in your image list
+
+## Run the Docker image
 
 ### docker run -p 5001:5000 -d python-hello-world
 
@@ -60,6 +63,22 @@ Will show you the logs for that running container
 ### docker tag python-hello-world [dockerhub username]/python-hello-world
 
 The Docker Hub naming convention is to tag your image with [dockerhub username]/[image name]. To do this, tag your previously created image python-hello-world to fit that format.
+
+### docker push username_fromtag/python-hello-world
+
+After you properly tag the image, use the docker push command to push your image to the Docker Hub registry
+
+## Deploy a change 
+
+### docker image build -t jzaccone/python-hello-world .
+
+rebuild the image 
+
+### docker push username_fromtag/python-hello-world
+
+### docker image history python-hello-world
+
+Prints the history for that image
 
 
 ## The docker file 
