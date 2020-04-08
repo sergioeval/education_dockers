@@ -86,6 +86,13 @@ Prints the history for that image
 # Lab 3 - Orchastrate Applications with Docker Swarm
 
 
+## Create your first swarm
+
+
+
+
+# Notes
+
 ## The docker file 
 
 Name of the file Dockerfile 
