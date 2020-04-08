@@ -1,4 +1,4 @@
-# education_dockers
+# Education dockers
 
 ## Running a container 
 docker container run -t ubuntu top
@@ -82,6 +82,8 @@ rebuild the image
 ### docker image history python-hello-world
 
 Prints the history for that image
+
+# Lab 3 - Orchastrate Applications with Docker Swarm
 
 
 ## The docker file 
