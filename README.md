@@ -34,7 +34,13 @@ Stop the container
 Remove the stopped containers
 
 
+### docker image build -t python-hello-world .(including the point at the end)
 
+Build the Docker image. Pass in the -t parameter to name your image python-hello-world
+
+### docker image ls
+
+Verify that your image shows in your image list
 
 ## The docker file 
 
@@ -47,6 +53,8 @@ RUN pip install flask
 CMD ["python","app.py"]
 
 COPY app.py /app.py
+
+
 
 ## Bash comands 
 
