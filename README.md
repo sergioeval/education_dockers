@@ -35,6 +35,8 @@ Stop the container
 ### docker system prune
 Remove the stopped containers
 
+# Lab 2 - Add CI/CD Value with docker images
+
 ## Create and build the Docker image
 
 ### docker image build -t python-hello-world .(including the point at the end)
