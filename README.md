@@ -88,6 +88,11 @@ Prints the history for that image
 
 ## Create your first swarm
 
+### docker swarm init --advertise-addr eth0
+
+Initialize the swarm on node 1:
+
+## Deploy your first service 
 
 
 
